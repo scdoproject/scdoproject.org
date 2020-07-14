@@ -4,7 +4,7 @@
  * This file must be loaded after 'fileinput.js'. Patterns in braces '{}', or
  * any HTML markup tags in the messages must not be converted or translated.
  *
- * @see http://github.com/kartik-v/bootstrap-fileinput
+ * @see https://github.com/kartik-v/bootstrap-fileinput
  * @author CyanoFresh <cyanofresh@gmail.com>
  * @Modified by Doston Usmonov <doston1533@gmail.com> 20.09.2019
  * NOTE: this file must be saved in UTF-8 encoding.
