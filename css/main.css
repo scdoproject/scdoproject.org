@@ -3,6 +3,10 @@ html {
     background-color: #000;
 }
 
+.navbar {
+    font-size: 20px;
+}
+
 .glow {
     font-size: 80px;
     color: #fff;
