@@ -17,8 +17,8 @@
     <script src=js/main.js></script>
     <style>
         .fas.fa-camera.fa-2x{
-            height: 34px;
-            width: 34px;
+            height: 30px;
+            width: 30px;
         }
 
         ul {
@@ -57,7 +57,7 @@
                     <span class="glyphicon glyphicon-align-justify"></span>
                 </button>
                 <a style="color:#fff" class="navbar-brand" href="/">
-                    <img alt="Brand" src="favicon.ico" style="" class="fas fa-camera fa-2x">
+                    <img alt="Brand" src="favicon.ico" style=";" class="fas fa-camera fa-2x">
                     <span style="font-size:12px">SCDO</span></a>
             </div>
 
@@ -85,6 +85,11 @@
                     </li>
                     <li><a style="color:#fff" href="https://github.com/scdoproject/scdowallet/releases" target="_blank">
                         Wallet
+                        <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li><a style="color:#fff" href="https://github.com/scdoproject/scdowallet/releases" target="_blank">
+                        Wiki
                         <span
                                 class="sr-only">(current)</span></a>
                     </li>
@@ -128,9 +133,10 @@
         <div class="row col-xs-12">
             <div style="margin-bottom: 10px; margin-top: 80px; color: #fff;" class="col-lg-12 mx-auto">
             
-            <div>
-            <p class="text-center">SCDO White Paper</p>
-                <iframe src="pdf/SCDO_Whitepaper.pdf" style="width:100%;height:800px;">SCDO White Paper</iframe>
+            <div class="text-center">
+                <p >SCDO White Paper</p>
+                <!--<iframe src="pdf/SCDO_Whitepaper.pdf" style="width:100%;height:800px;">SCDO White Paper</iframe>-->
+                <embed src="pdf/SCDO_Whitepaper.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="80%" height="960px" />
             </div>
             </div>
         </div>
