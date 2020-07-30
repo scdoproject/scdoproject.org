@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SCDO BlockChain</title>
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+
+    <script src=vendor/jquery/1.12.4/jquery.js></script>
+    <script src=vendor/bootstrap/3.3.7/js/bootstrap.js></script>
+    <script src=vendor/bootstrap-fileinput/5.1.0/js/fileinput.js></script>
+    <script src=vendor/bootstrap-fileinput/5.1.0/js/locales/zh.js></script>
+    <link rel="shortcut icon" href=img/icon_menu_mtc.png>
+    <link href=vendor/bootstrap/3.3.7/css/bootstrap.css rel=stylesheet>
+    <link href=vendor/bootstrap-fileinput/5.1.0/css/fileinput.css rel=stylesheet>
+    <link rel="stylesheet" href="css/main.css"/>
+    <script src=js/main.js></script>
+    <style>
+        .fas.fa-camera.fa-2x{
+            height: 30px;
+            width: 30px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0px;
+            margin: 0px;
+        }
+        .navbar-nav > li > .dropdown-menu {
+            margin-top: 0;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            background-color: transparent;
+            color:#fff;
+        }
+        .dropdown-menu > li > a {
+            display: block;
+            padding: 3px 20px;
+            clear: both;
+            font-weight: normal;
+            line-height: 1.42857143;
+            color: #fff;
+            white-space: nowrap;
+        }
+
+    </style>
+</head>
+<body style="background-color: #0e002f;padding-top: 0px; padding-bottom: 0px;">
+    <div class="bg">
+        <!--网页导航栏-->
+        <nav class="navbar navbar-fixed-top navbar-transparent" role="navigation">
+            <div class="container-fluid" style="margin-left: 12%; margin-right: 12%">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false" style="color: #fff">
+                        <span class="glyphicon glyphicon-align-justify"></span>
+                    </button>
+                    <a style="color:#fff" class="navbar-brand" href="/">
+                        <img alt="Brand" src="favicon.ico" style=";" class="fas fa-camera fa-2x">
+                        <span style="font-size:12px">SCDO</span></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav" style="margin-top: 10px;">
+
+                        <!--<li class="dropdown">
+                            <a style="color:#fff" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                            aria-haspopup="true"
+                            aria-expanded="false">Currency <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li style=' background-image:url("img/icon_menu_mtc.png");background-repeat:no-repeat;background-position:0px 5px;padding-left:14px;'>
+                                    <a href="#">SCDO</a></li>
+                                <li style=' background-image:url("img/icon_menu_ccash.png");background-repeat:no-repeat;background-position:0px 5px;padding-left:14px;'>
+                                    <a href="#">CCASH</a></li>
+                                <li style=' background-image:url("img/icon_menu_mtcash.png");background-repeat:no-repeat;background-position:0px 5px;padding-left:14px;'>
+                                    <a href="#">MTCASH</a></li>
+                            </ul>
+                        </li>-->
+                        <li><a style="color:#fff" href="./team.html">Team</a></li>
+                        <li><a style="color:#fff" href="http://scdoscan.net/" target="_blank">Block
+                            Explorer
+                            <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li><a style="color:#fff" href="https://github.com/scdoproject/scdowallet/releases" target="_blank">
+                            Wallet
+                            <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li><a style="color:#fff" href="https://wiki.scdoproject.org/" target="_blank">
+                            Wiki
+                            <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li><a style="color:#fff" href="https://github.com/scdoproject" target="_blank">
+                            Github
+                            <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <!--
+                        <li class="dropdown">
+                            <a style="color:#fff" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                            aria-haspopup="true"
+                            aria-expanded="false">Wallet <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <img src="img/qrcode.jpg">
+                                </li>
+
+                            </ul>
+                        </li>-->
+                        
+                        <!--<li><a style="color:#fff" href="./whitepaper.html">White Paper</a></li>-->
+                        <li><a style="color:#fff" href="pdf/SCDO_Whitepaper_v4.pdf#toolbar=0" target="_blank">White Paper</a></li>
+                        <!--<li><a style="color:#fff" href="./news.html">News & Announcement</a></li>
+                        <li><a style="color:#fff" href="./contactus.html">Contact Us</a></li>-->
+                    </ul>
+                    <!--
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li class="dropdown" style="width:165px;">
+                            <a style="color:#fff" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                            aria-haspopup="true"
+                            aria-expanded="false">English <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="index.zh.html">Simplified Chinese</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    -->
+                </div><!-- /.navbar-collapse -->
+            </div>
+        </nav>
+
+        <div class="technical-ul" style="margin-top: 150px;">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" style="position: relative;">
+                <div class="jsx-4077136523 tech-box"><img src="img/Xin.jpeg" alt="" style="border-radius:50%;"
+                                                            class="jsx-4077136523">
+                    <div class="columnWithPad jsx-4077136523 techTitle-bg"><h2 class="jsx-4077136523 text-center text-capitalize bg-secondary">
+                        Dr. Alvin Xin, CEO</h2></div>
+                    <p class="jsx-4077136523 text-center">Chief Executive Office, in charge of project strategy.  He received his Ph.D. in mathematics from Purdue University. He has many years of experience in algorithm development, mathematical modeling and analysis with several publications on top journals of computational mathematics. He use to work for a top mutual fund in Shanghai. Since 2018 he has worked as a blockchain research scientist, conducting research in consensus algorithm, scalability and smart contract applications. He has sophisticated experience in blockchain development.</p>
+                    <div class="jsx-4077136523 tech-shade"></div>
+                </div>
+            </div>
+
+            <div class="columnWithPad col-xs-12 col-sm-6 col-md-6 col-lg-3" style="position: relative;">
+                <div class="jsx-4077136523 tech-box"><img src="img/Xu.jpeg" alt="" style="border-radius: 50%;"
+                                                            class="jsx-4077136523">
+                    <div class="jsx-4077136523 techTitle-bg"><h2 class="jsx-4077136523 text-center text-capitalize bg-secondary">
+                        Dr. Ava Xu, CAO</h2></div>
+                    <p class="jsx-4077136523 text-center">Chief Architecture Officer, Dr Xu got her PhD degree from Peking University in computer sciences. Dr. Xu is an expert in big data analytics, IOT, P2P network, and blockchain. She has many years of work experience in software development. In the last three years, Dr. Xu has been a core member and a director of an open source blockchain project, research and development in the mainnet, SDK, and a wallet across platforms. </p>
+                    <div class="jsx-4077136523 tech-shade"></div>
+                </div>
+            </div>
+
+             <div class="columnWithPad col-xs-12 col-sm-6 col-md-6 col-lg-3" style="position: relative;">
+                <div class="jsx-4077136523 tech-box"><img src="img/Zeng.jpg" alt="" style="border-radius: 50%;" class="jsx-4077136523">
+                    <div class="jsx-4077136523 techTitle-bg"><h2 class="jsx-4077136523 text-center text-capitalize bg-secondary">
+                        Dr. Luke Zeng, CTO</h2></div>
+                    <p class="jsx-4077136523 text-center">Chief Technology Officer, Luke is responsible for project technology research and development. Luke got his Ph.D. in Physics in 2015; Then he became post-doctoral research scholar at Lawrence Berkeley National Laboratory, engaged in quantum physics research. After that he became a blockchain research scientist and technical lead, engaged in e-wallet development, blockchain consensus algorithm, blockchain sharding technology & security and subchain research.</p>
+                    <div class="jsx-4077136523 tech-shade"></div>
+                </div>
+            </div>
+            
+            <div class="columnWithPad col-xs-12 col-sm-6 col-md-6 col-lg-3" style="position: relative;">
+                <div class="jsx-4077136523 tech-box"><img src="img/Dai.jpeg" alt="" style="border-radius: 50%;"
+                                                            class="jsx-4077136523">
+                    <div class="jsx-4077136523 techTitle-bg"><h2 class="jsx-4077136523 text-center text-capitalize bg-secondary">
+                        Diana Dai</h2></div>
+                    <p class="jsx-4077136523 text-center">Chief Marketing Officer, Diana is responsible for project public relations and marketing. Diana received her master degree of International Journalism from the University of Liverpool. She was the host of “Miss 499” and translator; She once worked in the China-UK Blockchain Association and has successfully participated in planning the marketing for many well-known blockchain projects.</p>
+                    <div class="jsx-4077136523 tech-shade"></div>
+                </div>
+            </div>
+
+           
+                    
+        </div>
+
+    </div>
+
+    <footer style="background-color: #000">
+        <div class="container container-fluid" style="margin-top: 50px; margin-bottom: 20px; color: #fff;font-size: 12px;">
+            <div class=" text-center"> COPYRIGHT©2020 SCDO Dev Team</div>
+        <!-- <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="right: 0px;text-align: right">Please beware of fake
+                accounts. For more information,please follow the official media platform of SCDO BlockChain.
+            </div>-->
+        </div>
+    </footer>
+</body>
+</html>
