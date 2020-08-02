@@ -1226,7 +1226,8 @@ a:focus {
 }
 
 .tech-box.jsx-4077136523 img.jsx-4077136523 {
-    width: 90px;
+    /* width: 90px; */
+    height:130px;
     margin: 0 auto;
 }
 
