@@ -7,6 +7,15 @@ html {
     font-size: 15px;
 }
 
+
+/* change navbar background on collapse */
+
+@media (max-width: 768px) {
+    nav.navbar {
+        background: rgb(70, 54, 54);
+    }
+}
+
 .glow {
     font-size: 80px;
     color: #fff;
