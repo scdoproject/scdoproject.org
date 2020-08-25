@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SCDO BlockChain</title>
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+
+    <script src=vendor/jquery/1.12.4/jquery.js></script>
+    <script src=vendor/bootstrap/3.3.7/js/bootstrap.js></script>
+    <script src=vendor/bootstrap-fileinput/5.1.0/js/fileinput.js></script>
+    <script src=vendor/bootstrap-fileinput/5.1.0/js/locales/zh.js></script>
+    <link rel="shortcut icon" href=favicon.ico>
+    <link href=vendor/bootstrap/3.3.7/css/bootstrap.css rel=stylesheet>
+    <link href=vendor/bootstrap-fileinput/5.1.0/css/fileinput.css rel=stylesheet>
+    <link rel="stylesheet" href="css/main.css"/>
+    <script src=js/main.js></script>
+    <style>
+        .fas.fa-camera.fa-2x{
+            height: 30px;
+            width: 30px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0px;
+            margin: 0px;
+        }
+        .navbar-nav > li > .dropdown-menu {
+            margin-top: 0;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            background-color: transparent;
+            color:#fff;
+        }
+        .dropdown-menu > li > a {
+            display: block;
+            padding: 3px 20px;
+            clear: both;
+            font-weight: normal;
+            line-height: 1.42857143;
+            color: #fff;
+            white-space: nowrap;
+        }
+
+    </style>
+</head>
+<body style="background-color: #0e002f;padding-top: 0px; padding-bottom: 0px;">
+<div class="bg">
+    <!--网页导航栏-->
+    <nav class="navbar navbar-fixed-top navbar-transparent" role="navigation">
+        <div class="container-fluid" style="margin-left: 12%; margin-right: 12%">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false" style="color: #fff">
+                    <span class="glyphicon glyphicon-align-justify"></span>
+                </button>
+                <a style="color:#fff" class="navbar-brand" href="/">
+                    <img alt="Brand" src="favicon2.ico" class="fas fa-camera fa-2x">
+                    <span style="font-size:12px">SCDO</span></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav" style="margin-top: 10px;">
+
+                    <!--<li class="dropdown">
+                        <a style="color:#fff" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                           aria-haspopup="true"
+                           aria-expanded="false">Currency <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li style=' background-image:url("img/icon_menu_mtc.png");background-repeat:no-repeat;background-position:0px 5px;padding-left:14px;'>
+                                <a href="#">SCDO</a></li>
+                             <li style=' background-image:url("img/icon_menu_ccash.png");background-repeat:no-repeat;background-position:0px 5px;padding-left:14px;'>
+                                <a href="#">CCASH</a></li>
+                            <li style=' background-image:url("img/icon_menu_mtcash.png");background-repeat:no-repeat;background-position:0px 5px;padding-left:14px;'>
+                                <a href="#">MTCASH</a></li>
+                        </ul>
+                    </li>-->
+                    <li><a style="color:#fff" href="./scdo.html">About SCDO</a></li>
+                    <li><a style="color:#fff" href="./team.html">Team</a></li>
+                    <!--<li><a style="color:#fff" href="http://scan.scdo.pro/" target="_blank">Block-->
+                    <li><a style="color:#fff" href="http://104.254.244.44:3002/#/" target="_blank">Block
+                        Explorer
+                        <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li><a style="color:#fff" href="https://github.com/scdoproject/scdowallet/releases" target="_blank">
+                        Wallet
+                        <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li><a style="color:#fff" href="https://wiki.scdoproject.org/" target="_blank">
+                        Wiki
+                        <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li><a style="color:#fff" href="https://github.com/" target="_blank">
+                        Github
+                        <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <!--
+                    <li class="dropdown">
+                        <a style="color:#fff" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                           aria-haspopup="true"
+                           aria-expanded="false">Wallet <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <img src="img/qrcode.jpg">
+                            </li>
+
+                        </ul>
+                    </li>-->
+                    
+                    <!--<li><a style="color:#fff" href="./whitepaper.html">White Paper</a></li>-->
+                    <li><a style="color:#fff" href="pdf/SCDO_Whitepaper_s.pdf#toolbar=0" target="_blank">White Paper</a></li>
+                    <!--<li><a style="color:#fff" href="./tech.html">Technology</a></li>-->
+                    <!--<li><a style="color:#fff" href="./contactus.html">Contact Us</a></li>-->
+                </ul>
+                <!--
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li class="dropdown" style="width:165px;">
+                        <a style="color:#fff" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                           aria-haspopup="true"
+                           aria-expanded="false">English <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.zh.html">Simplified Chinese</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                -->
+            </div><!-- /.navbar-collapse -->
+        </div>
+    </nav>
+
+
+    <section id="news">
+        <div class="container" style=" height: auto; width:70%; color: #fff;">
+            <div class="row col-xs-12">
+                <div style="margin-bottom: 10px; margin-top: 80px;;" class="col-lg-12 mx-auto">
+                    <div>
+
+                        <h3 class="text-center">SCDO Introduction</h3>
+                        <div class="p-3 mb-2" style="margin-top:30px; width:auto; heigth:100px;">
+                            <ul class="list-group text-primary" style="">
+
+                                <li class="list-group-item"><h3>SCDO introduction by video from founder--Victor Ionin</h3>    
+                                    <p>In this video, our founder Victor Ionin will briefly introduce SCDO project.</p>
+                                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#video_founder">More...</button>
+                                    <div id="video_founder" class="collapse">
+                                        <!-- 21:9 aspect ratio -->
+                                            <div class="embed-responsive embed-responsive-21by9">
+                                            <iframe class="embed-responsive-item" src="video/Victor_Speech.mp4"></iframe>
+                                            </div>
+
+                                            <!-- 16:9 aspect ratio -->
+                                            <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe class="embed-responsive-item" src="video/Victor_Speech.mp4"></iframe>
+                                            </div>
+
+                                            <!-- 4:3 aspect ratio -->
+                                            <!--<div class="embed-responsive embed-responsive-4by3">
+                                            <iframe class="embed-responsive-item" src="..."></iframe>
+                                            </div>-->
+
+                                            <!-- 1:1 aspect ratio -->
+                                            <div class="embed-responsive embed-responsive-1by1">
+                                            <iframe class="embed-responsive-item" src="video/Victor_Speech.mp4"></iframe>
+                                            </div>
+                                    </div>
+                                </li>
+
+                                <li class="list-group-item"><h3>SCDO Sharding Technology Introduction</h3>    
+                                    <p>SCDO's sharding technology combines the characteristics of P2P network sharding, transaction sharding, and state sharding: The SCDO network adopts the account balance model, and uses its innovative proof-of-work consensus algorithm (ZPoW). Sharding is implemented on-chain and each shard is completely replicated and absolutely equivalent to each other. Each shard does not need to store the complete information of other shards, and the shard communicates with each other at the minimum frequency to ensure the verification of cross-shard transactions. Moreover, the SCDO Sharding protocol ensures that the SCDO network can add more shards at a minimum cost when needed in the future to achieve higher expansion.
+                                    </p>
+                                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#sharding">More...</button>
+                                    <div id="sharding" class="collapse">
+                                        <!--<embed src="pdf/Sharding.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="600px" />-->
+                                        <object data="pdf/Sharding.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="600px"> 
+                                        <p>It appears you don't have a PDF plugin for this browser.
+                                        No biggie... you can <a href="pdf/Sharding.pdf">click here to
+                                        download the PDF file.</a></p>  
+                                        </object>
+                                    </div>
+                                </li>
+
+                                <li class="list-group-item"><h3>SCDO Consensus Algorigthm Introduction</h3>    
+                                    <p>Click on the button to toggle between showing and hiding content.</p>
+                                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#Consensus">More...</button>
+                                    <div id="Consensus" class="collapse">
+                                        <object data="pdf/Zpow.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="600px"> 
+                                        <p>It appears you don't have a PDF plugin for this browser.
+                                        No biggie... you can <a href="pdf/Zpow.pdf">click here to
+                                        download the PDF file.</a></p>  
+                                        </object>
+                                    </div>
+                                </li>
+
+
+                                <li class="list-group-item"><h3>SCDO Stem Subchain Introduction</h3>    
+                                    <p>Click on the button to toggle between showing and hiding content.</p>
+                                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#Subchain">More...</button>
+                                    <div id="Subchain" class="collapse">
+                                        <object data="pdf/Stem.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="600px"> 
+                                        <p>It appears you don't have a PDF plugin for this browser.
+                                        No biggie... you can <a href="pdf/Stem.pdf">click here to
+                                        download the PDF file.</a></p>  
+                                        </object>
+                                    </div>
+                                </li>
+
+
+                                <!--
+                                <li class="list-group-item"><h3>SCDO Senior Consultant Video</h3>    
+                                    <p>Click on the button to toggle between showing and hiding content.</p>
+                                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#video1">More...</button>
+                                    <div id="video1" class="collapse">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.-->
+                                        <!-- 21:9 aspect ratio -->
+                                            <!--<div class="embed-responsive embed-responsive-21by9">
+                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v64KOxKVLVg"></iframe>
+                                            </div>-->
+
+                                            <!-- 16:9 aspect ratio -->
+                                            <!--<div class="embed-responsive embed-responsive-16by9">
+                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v64KOxKVLVg"></iframe>
+                                            </div>-->
+
+                                            <!-- 4:3 aspect ratio -->
+                                            <!--<div class="embed-responsive embed-responsive-4by3">
+                                            <iframe class="embed-responsive-item" src="..."></iframe>
+                                            </div>-->
+
+                                            <!-- 1:1 aspect ratio -->
+                                            <<!--div class="embed-responsive embed-responsive-1by1">
+                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v64KOxKVLVg"></iframe>
+                                            </div>
+                                    </div>
+                                </li> -->
+                               
+                            </ul>
+
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</div>
+<footer style="background-color: #000">
+    <div class="container container-fluid" style="margin-top: 0px; margin-bottom: 20px; color: #fff;font-size: 12px;">
+        <div class=" text-center"> COPYRIGHT©2020 SCDO Dev Team</div>
+       <!-- <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="right: 0px;text-align: right">Please beware of fake
+            accounts. For more information,please follow the official media platform of SCDO BlockChain.
+        </div>
+    </div>
+</footer>
+</body>
+</html>
