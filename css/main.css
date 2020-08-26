@@ -16,6 +16,11 @@ html {
     }
 }
 
+.navbar-fixed-top {
+    background-color: rgb(4, 2, 3);
+    ;
+}
+
 .glow {
     font-size: 80px;
     color: #fff;
