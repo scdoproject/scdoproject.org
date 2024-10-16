@@ -42,7 +42,20 @@
             color: #fff;
             white-space: nowrap;
         }
-
+        #moving-text span {
+            display: inline-block;
+            position: relative;
+            animation: moveRight 1s ease infinite;
+            animation-delay: calc(var(--i) * 0.2s);
+        }
+        @keyframes moveRight {
+            0%, 100% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(-10px);
+            }
+        }
     </style>
 </head>
 <body style="background-color: #0e002f;padding-top: 0px; padding-bottom: 0px;">
@@ -147,12 +160,27 @@
             </p>Empower Your Applications, Enrich Your Digital Asset<p>
         </div>
 
-        <div class="glow" target="_blank" style="text-align: center; font-size:28px;color:#fff;margin-top: 12px;">
-            </p>SCDO mainnet goes live at 1:00:00 UTC January 5th, 2021!<a href="./news.html" style="font-size:20px;color:#fff;"> [more...]</a></div>
-            <p>
-            <div class="glow" target="_blank" style="text-align: center; font-size:28px;color:#fff;margin-top: 12px;">
-            </p>SCDO version 2.0.0 Bluefin release is available for download! <a href="./news.html" style="font-size:20px;color:#fff;"> [more...]</a></div>
-            <p>
+<!--        <div class="glow" target="_blank" style="text-align: center; font-size:28px;color:#fff;margin-top: 12px;">-->
+<!--            </p>SCDO mainnet goes live at 1:00:00 UTC January 5th, 2021!<a href="./news.html" style="font-size:20px;color:#fff;"> [more...]</a></div>-->
+<!--            <p>-->
+<!--            <div class="glow" target="_blank" style="text-align: center; font-size:28px;color:#fff;margin-top: 12px;">-->
+<!--            </p>SCDO version 2.0.0 Bluefin release is available for download! <a href="./news.html" style="font-size:20px;color:#fff;"> [more...]</a></div>-->
+<!--            <p>-->
+<!--        </div>-->
+        <div class="glow" target="_blank" style="text-align: center; font-size:28px;color:#fff;margin-top: 30px;">
+            <p id="moving-text">
+                <a href="./news.html" title="Read more..."  style="font-size:28px;color:#fff;">
+                    <span style="--i:1;">SCDO</span>
+                    <span style="--i:2;">Launches</span>
+                    <span style="--i:3;">Smart</span>
+                    <span style="--i:4;">Contract</span>
+                    <span style="--i:5;">Tokens</span>
+                    <span style="--i:6;">on</span>
+                    <span style="--i:7;">HyperPay</span>
+                    <span style="--i:8;">Wallet</span>
+                    <span style="--i:9;">!</span>
+                </a>
+            </p>
         </div>
 
         <div style="margin-top: 250px; height:880px;">
